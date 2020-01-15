@@ -9,8 +9,19 @@
              @endforeach
                {{ $actors->links() }}
      </div>
-       </section>
-
-
-     </div>
+       <div class="row detalle">
+           <div class="col-12 col-sm-12 col-md-12 col-lg-12 crear">
+               <form class="" action="/actores/nuevo" method="get">
+               <input class="button2" type="submit" name="" value="Agregar Nuevo">
+               </form>
+           </div>
+       </div>
+       {{-- <div class="row detalle">
+           <div class="col-12 col-sm-12 col-md-12 col-lg-12 crear">
+               <form class="" action="/events/new" method="get">
+               <input type="hidden" name="id" value="">
+               <input class="button2" type="submit" name="" value="Crear Evento">
+               </form>
+           </div>
+       </div> --}}
  @endsection
