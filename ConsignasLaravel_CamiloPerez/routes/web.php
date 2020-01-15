@@ -27,3 +27,4 @@ Route::post('/actores', 'ActorController@store');
 Route::get('/actores/{actor}', 'ActorController@show');
 Route::get('/peliculas/{movie}/edit', 'MovieController@edit');
 Route::patch('/movies/{movie}', 'MovieController@update');
+Route::get('/generos/{genre}', 'GenreController@show');

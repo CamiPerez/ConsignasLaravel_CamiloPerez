@@ -11,4 +11,8 @@ class GenreController extends Controller
       $genres = Genre::orderBy('name')->paginate(5);
       return view("generos")->with("genres", $genres);
   }
+
+  public function show(Genre $genre){
+        return view("detalleGeneros")->with("genre", $genre);
+  }
 }

@@ -10,7 +10,11 @@ class Genre extends Model
       public $table = 'genres';
       public $guarded = [];
 
+      // public function movies(){
+      //     return $this->hasMany(Movie::class, "id");
+      // }
+
       public function movies(){
-          return $this->hasMany(Movie::class);
+        return $this->hasMany("App\Movie", "genre_id");
       }
   }
