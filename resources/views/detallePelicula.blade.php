@@ -2,9 +2,9 @@
 
 @section('content')
 
-  <div>
+  <div  class="detalle">
       <div>
-          <h4>{{$movie->title}}</h4>
+          <h1>{{$movie->title}}</h1>
           @if ($movie->genres)
           <p>Género: {{$movie->genres->name}}</p>
           @endif
@@ -22,12 +22,13 @@
             @endforeach
             @endif
           </ul>
-          <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+          <div>
               <form class="" action="/peliculas/{{$movie->id}}/edit" method="get">
               {{-- <input type="hidden" name="id" value="{{$movie->id}}"> --}}
-              <input class="button2" type="submit" name="" value="Editar Película">
+              <input class="btn btn-dark button2" type="submit" name="" value="Editar Película">
               </form>
           </div>
         </div>
     </div>
 @endsection
+{{-- class="col-6 col-sm-6 col-md-6 col-lg-3" --}}

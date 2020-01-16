@@ -2,7 +2,7 @@
 
 @section('content')
 
-  <div>
+  <div class="detalle">
       <div>
           <h4>{{$actor->getFullName()}}</h4>
           @if ($actor->bestMovie)

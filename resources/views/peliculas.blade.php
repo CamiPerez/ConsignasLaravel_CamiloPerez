@@ -2,11 +2,11 @@
 
 @section('content')
 
-   <div class="col-8 buscador">
-     <div class="row">
-
+   <div>
+     <div class="listado">
+           <h1>Películas</h1>
              @foreach ($movies as $movie)
-              <a href="{{ url('peliculas/' . $movie->id)}}"><h3><b>{{$movie->title}}</b></h3></a>
+              <a href="{{ url('peliculas/' . $movie->id)}}"><h3>{{$movie->title}}</h3></a>
              @endforeach
                {{ $movies->links() }}
      </div>

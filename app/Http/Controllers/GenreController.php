@@ -15,4 +15,11 @@ class GenreController extends Controller
   public function show(Genre $genre){
         return view("detalleGeneros")->with("genre", $genre);
   }
+
+  public function main()
+  {
+      $genres = Genre::all();
+      return view("index")->with("genres", $genres);
+  }
+
 }

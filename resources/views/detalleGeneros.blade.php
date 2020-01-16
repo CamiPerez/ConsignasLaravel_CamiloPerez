@@ -2,13 +2,13 @@
 
 @section('content')
 
-  <div>
+  <div class = "detalle">
       <div>
-          <h4>{{$genre->name}}</h4>
+          <h1>{{$genre->name}}</h1>
           <ul>
             @foreach ($genre->  movies as $movie)
               <li>
-                <a href="{{ url('peliculas/' . $movie->id)}}"><h3><b>{{$movie->title}}</b></h3></a>
+                <a href="{{ url('peliculas/' . $movie->id)}}"><h3>{{$movie->title}}</h3></a>
               </li>
             @endforeach
             {{-- {{ $genre->links() }} --}}

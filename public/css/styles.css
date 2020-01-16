@@ -1,0 +1,159 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    color: #FFF;
+}
+
+footer a:hover , .navbar a:hover{
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+body{
+  background-color: black;
+}
+
+.navbar {
+  background-color: #c0392b;
+  height: 20vh;
+  width: 100%;
+}
+.footer {
+  background-color: #c0392b;
+  height: 80vh;
+  width: 100%;
+}
+
+.leftbar{
+  width: 100%;
+  height: 100%;
+}
+
+.leftbar ul {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+footer .leftbar ul{
+  flex-direction: row;
+  justify-content: space-around;
+  align-items:flex-start;
+}
+
+nav .leftbar ul{
+  justify-content:space-around;
+  align-items:flex-end;
+  flex-direction: row;
+}
+
+.rightbar{
+position: absolute;
+left:85%;
+top: 5%;
+display:inline;
+width:100%;
+}
+
+nav , footer{
+  font-size: 15px;
+  font-weight: bold;
+  }
+
+  img{
+    width: 100%;
+    height: 80%;
+  }
+
+section .generos{
+  display: flex;
+}
+
+.generos {
+  background-color: #c0392b;
+  color: #FFF;
+  justify-content: center;
+  }
+#generos{
+  background-color: black;
+  height: 100%;
+}
+
+.listado {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+}
+
+.listado a:hover{
+  color: #c0392b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.listado h1{
+  color: #FFF;
+  font-weight: bold;
+}
+
+.detalle h1{
+  color: #FFF;
+  font-weight: bold;
+}
+
+#generos a:hover{
+  color: #c0392b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.detalle a:hover{
+  color: #c0392b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+.detalle{
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  color: #FFF;
+}
+
+.form{
+  color: #FFF;
+}
+
+@media (min-width: 768px){
+
+  .rightbar{
+  left:91%;
+
+  }
+
+  nav .leftbar , footer .leftbar{
+    font-size: 25px;
+    }
+}
+
+  @media (min-width: 991px){
+
+    .rightbar{
+    left: 93%;
+    }
+
+    nav .leftbar , footer .leftbar{
+      font-size: 30px;
+      }
+
+}
